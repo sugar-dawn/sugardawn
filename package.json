@@ -8,8 +8,10 @@
   "private": true,
   "dependencies": {
     "@nestjs/common": "^9.0.0",
+    "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
+    "@prisma/client": "^4.4.0",
     "core-js": "^3.6.5",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -52,10 +54,14 @@
     "jest-environment-jsdom": "28.1.1",
     "nx": "15.0.0",
     "prettier": "^2.6.2",
+    "prisma": "^4.4.0",
     "react-test-renderer": "18.2.0",
     "ts-jest": "28.0.5",
     "ts-node": "10.9.1",
     "typescript": "^4.8.4"
+  },
+  "prisma": {
+    "schema": "./prisma/schema.prisma"
   },
   "workspaces": [
     "packages/*"
